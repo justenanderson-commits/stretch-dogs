@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Stretch Tech Group Project
+## Abstract:
+This application allows users to browse through 12 of the most popular, AKC-recognized dog breeds in America to research and find the breed that's right for them (based on the dog's size, energy level, etc). 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Link to [deployed app](Add link here)
 
-## Available Scripts
+(Add GIF here)
 
-In the project directory, you can run:
+## Installation Instructions:
+1. Go to [this repo](https://github.com/Mrcolin99/stretch-dogs) on Github
+2. Click Fork > Create New Fork
+3. Click Code
+4. Copy the SSH url provided by GitHub
+5. In the terminal, navigate to the new project repository
+6. Type git clone and paste the URL
+7. Run `cd stretch-dogs`
+8. Run `npm install`. Note: Do not run `npm audit fix --force`. This will update to the latest version of packages, which are not wanted. 
+9. Run `npm start` to start the program. (`Ctrl + C` will stop it.)
+10. In a browser window, navigate to `http://localhost:3000/`.
+11. The app should now ready to browse and research dog breeds.  
 
-### `npm start`
+## Context:
+The team held daily standups and followed a kanban workflow using GitHub Projects. Meetings started by checking in with one another as humans. Then accomplishments from the day prior were discussed, what needed to be done that day and by whom, and then collaborative debugging or problem solving was completed (as needed). Some tasks were completed indivdually, others together. The collective estimate is about 50-60 hours of work time invested over 9 days to create this application's functionality and test suite from scratch using React. The Cypress was used for testing. Router provided the routing.
+For accessability we chose large font and neutral, high-contrast colors. 100% Lighthouse Accessibility score.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Contributors:
+- [Dana Tram Truong](https://github.com/tramtram1130)
+- [Tricia Holmes](https://github.com/tricia-holmes)
+- [Colin Cervo](https://github.com/Mrcolin99)
+- [Justen Anderson](https://github.com/justenanderson-commits)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Learning Goals:
+- Incorporating a new technology into an application that isn’t explicitly taught
+- Build a backend server with Express, hosted with PostgreSQL using Knex
+- Gain competency with React fundamentals
+- Test React components & asynchronous JS
+- Practice refactoring
+- Create a multi-page UX using Router
+- Create a user interface that is easy to use and clearly displays information.
+- Write modular, reusable code that follows SRP (Single Responsibility Principle)
+- Implement a robust testing suite using TDD
+- Make network requests to retrieve data
+- Work with a local server and make network requests to API endpoints to retrieve and manipulate data.
+- Refactor your code to DRY up repetitive logic
+- Practice talking about code and high level technical concepts
+- Implement feedback to improve product and process
 
-### `npm test`
+## Tech Used:
+- Express
+- PostgreSQL
+- - Knex
+- React
+- Cypress
+- Router
+- GitHub
+- Terminal
+- VS Code
+- Chrome Browser/Dev tools + React dev tools
+- Lighthouse
+- Zoom
+- JavaScript
+- Slack
+- Google Font API
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Wins and Challenges
+Wins
+- 
 
-### `npm run build`
+Challenges
+- Having a 2-week break start after 2 days of project work was challenging. We all felt rusty and a bit disconnected from the challenge at-hand after the break.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
