@@ -59,6 +59,8 @@ For accessability we chose large font and neutral, high-contrast colors. 100% Li
 - Lighthouse
 - Zoom
 - JavaScript
+- CSS
+- HTML
 - Slack
 - Google Font API
 
