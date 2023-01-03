@@ -48,7 +48,7 @@ For accessability we chose large font and neutral, high-contrast colors. 100% Li
 ## Tech Used:
 - Express
 - PostgreSQL
-- - Knex
+- Knex
 - React
 - Cypress
 - Router
