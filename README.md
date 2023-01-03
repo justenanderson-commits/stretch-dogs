@@ -26,7 +26,7 @@ For accessability we chose large font and neutral, high-contrast colors. 100% Li
 ## Contributors:
 - [Dana Tram Truong](https://github.com/tramtram1130)
 - [Tricia Holmes](https://github.com/tricia-holmes)
-- [Colin Cervo](https://github.com/Mrcolin99)
+- [Colin Ciervo](https://github.com/Mrcolin99)
 - [Justen Anderson](https://github.com/justenanderson-commits)
 
 ## Learning Goals:
