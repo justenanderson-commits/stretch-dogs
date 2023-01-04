@@ -11,7 +11,6 @@ class Main extends Component {
   render() {
     return (
       <div className="Main">
-        <h2>Main Component</h2>
         <Questionnaire />
       </div>
     )
