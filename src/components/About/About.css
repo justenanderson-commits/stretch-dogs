@@ -1,0 +1,11 @@
+.about__bg {
+  width: 100vw;
+  height: 100vh;
+  background-color: bisque;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
