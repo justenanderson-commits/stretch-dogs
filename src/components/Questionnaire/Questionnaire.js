@@ -54,7 +54,7 @@ const Questionnaire = () => {
          </div>
       </div>
       
-      <button>Search</button>
+      <button>Submit</button>
 
     </div>
    );
