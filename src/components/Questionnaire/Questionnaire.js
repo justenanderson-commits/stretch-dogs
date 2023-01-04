@@ -4,6 +4,7 @@ import "./Questionnaire.css"
 class Questionnaire extends Component {
   constructor() {
     super()
+    // I assigned default values here in case a user decides not to move any/all sliders before clicking the submit button.
     this.state = {
       size: '3',
       family_rating: '3',
