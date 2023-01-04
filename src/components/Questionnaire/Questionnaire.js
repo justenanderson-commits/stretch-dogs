@@ -18,7 +18,7 @@ class Questionnaire extends Component {
     this.setState({ [event.target.name]: event.target.value })
   }
 
-  searchBreeds = (event) => {
+  handleFormSubmit = (event) => {
     event.preventDefault()
     const newBreedSearch = {
       size: this.state.size,
