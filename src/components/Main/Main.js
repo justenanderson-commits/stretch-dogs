@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
+import Results from '../Results/Results'
 import Questionnaire from '../Questionnaire/Questionnaire'
 
 class Main extends Component {
@@ -11,6 +12,8 @@ class Main extends Component {
   render() {
     return (
       <div className="Main">
+        <h2>Main Component</h2>
+        <Results />
         <Questionnaire />
       </div>
     )
