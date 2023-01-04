@@ -1,4 +1,5 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
+import Questionnaire from '../Questionnaire/Questionnaire'
 
 class Main extends Component {
   constructor() {
@@ -9,7 +10,10 @@ class Main extends Component {
   }
   render() {
     return (
-      <h2>Main Component</h2>
+      <div className="Main">
+        <h2>Main Component</h2>
+        <Questionnaire />
+      </div>
     )
   }
 }
