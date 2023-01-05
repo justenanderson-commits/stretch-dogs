@@ -1,14 +1,21 @@
 import React from 'react'
 import './Header.css'
+import { Link } from 'react-router-dom'
+import { APP_ROUTES } from '../../utilis/constants'
 
 const Header = () => {
   return (
-    <div className="header-container">
-      <img src="https://www.publicdomainpictures.net/pictures/440000/velka/pfoten-abdruck-clipart-hund.png" alt="Lisa Frank dog tracks"></img>
-      <nav className="link-container">
-        <a href="url">About</a>
-        <a href="url">Breeds</a>
-        <a href="url">Resources</a>
+    <div className='header-container'>
+      <Link to='/' className='header__link'>
+        <img
+          src='https://www.publicdomainpictures.net/pictures/440000/velka/pfoten-abdruck-clipart-hund.png'
+          alt='Lisa Frank dog tracks'
+        />
+      </Link>
+      <nav className='link-container'>
+        <Link to={APP_ROUTES.ABOUT}>About</Link>
+        <Link to='/'>Breeds</Link>
+        <Link to='/'>Resources</Link>
       </nav>
     </div>
   )

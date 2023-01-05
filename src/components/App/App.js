@@ -1,16 +1,28 @@
-import './App.css';
+import './App.css'
 import Main from '../Main/Main'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
+import About from '../About'
+import {APP_ROUTES} from '../../utilis/constants'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Questionnaire from '../Questionnaire/Questionnaire'
+import Result from '../Results/Results'
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Main />
-      <Footer />
+    <div className='App'>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path='/' element={<Main />} />
+          <Route path={APP_ROUTES.ABOUT} element={<About />} />
+          <Route path={APP_ROUTES.QUIZ} element={<Questionnaire />} />
+          <Route path={APP_ROUTES.RESULTS} element={<Result />} />
+        </Routes>
+        <Footer />
+      </Router>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

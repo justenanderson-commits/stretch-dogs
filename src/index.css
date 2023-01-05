@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: AbrilFatFace;
+  src: url('../src/assets/fonts/AbrilFatface-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Poppins-Light;
+  src: url('../src/assets/fonts/Poppins-Light.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url('../src/assets/fonts/Poppins-Medium.ttf');
+  font-weight: 400;
+}
+

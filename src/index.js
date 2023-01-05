@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './assets/fonts/AbrilFatface-Regular.ttf'
 import App from './components/App/App';
 import reportWebVitals from './reportWebVitals';
 
