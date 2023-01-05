@@ -10,7 +10,7 @@ const Card = () => {
         alt="golden retriever pupper"
       />
       <div className="results-text">
-        <p className="match-percentage-text">80% Match</p>
+        {/* <p className="match-percentage-text">80% Match</p> */}
         <p className="name-text">Golden Retriever</p>
       </div>
       <button className="dog-button">Click For More</button>
