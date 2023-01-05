@@ -1,20 +1,38 @@
 .results-card {
-  border: 2px solid blue;
-  width: 30%;
+  background-color: white;
+  border-radius: 0rem 3.5rem 0rem 3.5rem;
+  width: 25%;
   height: fit-content;
 }
 
 .dog-portrait {
-  width: 30%;
+  width: 94%;
   height: 100%;
+  border-radius: 0rem 3.5rem 0rem 0rem;
 }
 
 .results-text {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  font-family: Poppins-Medium;
+  font-size: 1.5rem;
+  color: #0a4c4b;
 }
 
 .dog-button {
   margin-bottom: 8px;
+  background: #f3f3f4;
+  color: #0d0c22;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.dog-button:hover {
+  background: #0a4c4b;
+  color: #f3f3f4;
 }
