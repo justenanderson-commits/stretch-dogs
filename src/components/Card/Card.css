@@ -20,11 +20,11 @@
   color: #0a4c4b;
 }
 
-.dog-button {
-  margin-bottom: 8px;
+.dog-button, .close-modal-button {
   background: #f3f3f4;
   color: #0d0c22;
-  padding: 10px 16px;
+  padding: .5rem;
+  margin: 1rem 0rem 1rem 0rem;
   border: none;
   border-radius: 8px;
   font-size: 1rem;
@@ -32,7 +32,13 @@
   transition: 0.3s;
 }
 
-.dog-button:hover {
+.dog-button:hover,
+.close-modal-button:hover {
   background: #0a4c4b;
   color: #f3f3f4;
+}
+
+.modal {
+  width: 30vw;
+  text-align-last: center;
 }
