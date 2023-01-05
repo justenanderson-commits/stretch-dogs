@@ -1,4 +1,5 @@
 import React from 'react'
+import MicroModal from "react-micro-modal";
 import './Card.css'
 
 const Card = () => {
@@ -10,10 +11,13 @@ const Card = () => {
         alt="golden retriever pupper"
       />
       <div className="results-text">
-        {/* <p className="match-percentage-text">80% Match</p> */}
         <p className="name-text">Golden Retriever</p>
       </div>
-      <button className="dog-button">Click For More</button>
+      <MicroModal trigger={(open) => 
+        <button className="dog-button" onClick={open}>Click For More</button>}>
+      {(close) => 
+      <button onClick={close}>Close!</button>}
+      </MicroModal>
     </div>
   )
 }
