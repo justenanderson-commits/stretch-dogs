@@ -1,18 +1,19 @@
 import React from 'react'
+import { GITHUB_ROUTES } from '../../utilis/constants'
 import './Footer.css'
 
 const Footer = () => {
   return (
-    <div className="footer-container">
-      <nav className="all-link-container">
-        <div className="repo-link-container">
-          <a href="https://github.com/Mrcolin99/stretch-dogs">App Repo</a>
+    <div className='footer-container'>
+      <nav className='all-link-container'>
+        <div className='repo-link-container'>
+          <a href={GITHUB_ROUTES.REPO}>App Repo</a>
         </div>
-        <div className="team-link-container">
-          <a href="https://github.com/justenanderson-commits">Justen Anderson</a>
-          <a href="https://github.com/tricia-holmes/">Tricia Holmes</a>
-          <a href="https://github.com/Mrcolin99">Colin Ciervo</a>
-          <a href="https://github.com/tramtram1130">Dana Truong</a>
+        <div className='team-link-container'>
+          <a href={GITHUB_ROUTES.JUSTEN}>Justen Anderson</a>
+          <a href={GITHUB_ROUTES.TRICIA}>Tricia Holmes</a>
+          <a href={GITHUB_ROUTES.COLIN}>Colin Ciervo</a>
+          <a href={GITHUB_ROUTES.DANA}>Dana Truong</a>
         </div>
       </nav>
     </div>
