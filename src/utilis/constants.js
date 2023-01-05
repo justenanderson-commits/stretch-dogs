@@ -1,5 +1,7 @@
 export const APP_ROUTES = {
   ABOUT: `/about`,
+  QUIZ: '/quiz',
+  RESULTS: '/results'
 }
 
 export const GITHUB_ROUTES = {
