@@ -1,0 +1,12 @@
+.quiz-link {
+    color: white;
+    background-color: darkblue;
+    border: solid 3px darkblue;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.puppy {
+    height: 30vh;
+    width: 15vw;
+}
