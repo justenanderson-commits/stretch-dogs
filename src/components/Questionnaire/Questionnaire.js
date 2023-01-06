@@ -175,7 +175,7 @@ class Questionnaire extends Component {
               <p>Lots of daily exercise</p>
             </div>
           </div>
-          <button type='submit'>Submit</button>
+          <button className="submit-button" type='submit'>Submit</button>
         </form>
       </>
     )
