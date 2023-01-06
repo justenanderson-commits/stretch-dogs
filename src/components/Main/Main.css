@@ -9,10 +9,23 @@
     color: #f8f0e5;
     background-color: #3A716F;
     border: solid 3px #3A716F;
-    border-radius: 8px;
+    border-radius: 80px;
     text-decoration: none;
     height: 3vh;
     width: 20vw;
+    margin: auto;
+}
+
+.quiz-link:hover {
+    font-family: Poppins-Medium;
+    font-size: large;
+    color: #f8f0e5;
+    background-color: #0a4c4b;
+    border: solid 3px #0a4c4b;
+    border-radius: 80px;
+    text-decoration: none;
+    height: 3.5vh;
+    width: 22.5vw;
     margin: auto;
 }
 
