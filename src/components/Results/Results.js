@@ -4,7 +4,7 @@ import Card from '../Card/Card'
 
 const Result = ({ quizResults, reset }) => {
   console.log(quizResults)
-  let topDogs
+  let topDogs = null
 
   if (JSON.stringify(quizResults) !== '{}') {
     topDogs = quizResults.map((dog, index) => {
@@ -16,7 +16,7 @@ const Result = ({ quizResults, reset }) => {
     <div className='results-container'>
       <h2>Top Breeds For You</h2>
       <div className='results-card-container'>
-        {topDogs ? topDogs : <p>'Just get a cat'</p>}
+    {topDogs.length > 0 ? topDogs : <p>Hmm, maybe you're better off getting a cat?</p>}
       </div>
       <button className='home-button' onClick={() => reset()}>
         Back To Home
