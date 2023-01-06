@@ -1,7 +1,12 @@
+export const API_ROUTES = {
+  GET_RESULTS: `http://localhost:3001/api/v1/dogs/`
+}
+
+
 export const APP_ROUTES = {
   ABOUT: `/about`,
   QUIZ: '/quiz',
-  RESULTS: '/results'
+  RESULTS: '/results',
 }
 
 export const GITHUB_ROUTES = {
