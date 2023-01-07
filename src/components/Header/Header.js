@@ -2,13 +2,14 @@ import React from 'react'
 import './Header.css'
 import { Link } from 'react-router-dom'
 import { APP_ROUTES } from '../../utilis/constants'
+import paw from '../../assets/images/paw-print-heart.gif'
 
 const Header = () => {
   return (
     <div className='header-container'>
       <Link to='/' className='header__link'>
         <img
-          src='https://www.publicdomainpictures.net/pictures/440000/velka/pfoten-abdruck-clipart-hund.png'
+          src={ paw }
           alt='Lisa Frank dog tracks'
         />
       </Link>
