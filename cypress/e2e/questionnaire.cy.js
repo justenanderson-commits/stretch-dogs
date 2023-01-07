@@ -18,4 +18,7 @@ describe('question page', () => {
         cy.get('#size')
         .should('have.attr', 'value', 4)
     })
+    it('should be able to change all slider values', () => {
+        
+    })
 })
