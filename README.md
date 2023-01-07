@@ -51,6 +51,8 @@ For accessability we chose large font and neutral, high-contrast colors. 100% Li
 - Knex
 - TablePlus
 - React
+- React Icons
+- GIMP Photo Editor
 - Cypress
 - Router
 - GitHub
@@ -71,4 +73,6 @@ Wins
 
 Challenges
 - Having a 2-week break start after 2 days of project work was challenging. We all felt rusty and a bit disconnected from the challenge at-hand after the break.
+- Testing the sliders was very difficult. Even after adding a plugin to add tabability, we continued to struggle using Cypress to test slider inputs.
+- Time zone differences made it harder for the group to work in-sync. Everyone's optimal work hours seemed to be at different times. 
 
