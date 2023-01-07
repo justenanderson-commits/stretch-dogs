@@ -13,9 +13,21 @@ describe('question page', () => {
     it('should be able to change slider values', () => {
         cy.get('#familyRating')
         .should('have.attr', 'value', 3)
-        
-        // cy.get('#size')
-        // .should('have.attr', 'value', 4)
+        cy.get('body')
+        .tab()
+        .tab()
+        .tab()
+        .tab()
+        .tab()
+        .tab()
+        .trigger('keydown', { keyCode: 39 })
+        cy.wait(500)
+        cy.get('#familyRating')
+        .trigger('keyUp', { keyCode: 39 })
+
+
+        cy.get('#familyRating')
+        .should('have.attr', 'value', 4)
     })
     it('should be able to change all slider values', () => {
         
