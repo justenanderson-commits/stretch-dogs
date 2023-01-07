@@ -2,17 +2,20 @@ describe('question page', () => {
     beforeEach(() => {
         cy.visit('localhost:3000/quiz')
     })
-
     it('should contain 5 sliders', () => {
+        cy.visit('localhost:3000/quiz')
         cy.get('#size')
-        cy.get('#family_rating')
+        cy.get('#familyRating')
         cy.get('#trainability')
-        cy.get('#grooming_needed')
-        cy.get('#energy_level')
+        cy.get('#groomingNeeded')
+        cy.get('#energyLevel')
     })
-    it('should be able to submit the quiz', () => {
-        cy.get('button').click()
-        cy.get('h2')
-        .contains('Top Breeds For You')
+    it('should be able to change slider values', () => {
+        cy.get('#size')
+        .should('have.attr', 'value', 3)
+        .type('{rightArrow}')
+
+        cy.get('#size')
+        .should('have.attr', 'value', 4)
     })
 })
