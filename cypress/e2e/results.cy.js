@@ -17,4 +17,13 @@ describe('results page', () => {
         cy.get('.results-card-container > p')
         .contains('Hmm, maybe you')
     })
+    it('should show quiz results when you habe a matching animal', () => {
+        cy.get('.quiz-link').click()
+        cy.get('.submit-button').click()
+        cy.intercept({method: 'GET',
+        url: 'http://localhost:3001/api/v1/dogs/3/4/5/5/5'},
+        { fixture: 'dogs' })
+        cy.get('.name-test')
+        .contains('Australian Shepherd')
+    })
 })
