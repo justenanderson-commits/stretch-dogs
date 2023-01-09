@@ -17,19 +17,20 @@ class Questionnaire extends Component {
     }
   }
 
+  componentDidMount() {
+    if (this.state.quizResults) {
+      this.setState({ quizResults: {} })
+    }
+  }
+
   getResults = async (dogSearch) => {
     await this.setState({ quizInputs: dogSearch })
-    const response = await fetchResults(this.state.quizInputs)
-    .catch((error) =>
+    const response = await fetchResults(this.state.quizInputs).catch((error) =>
       alert(error)
     )
     this.setState({ quizResults: response })
   }
 
-  reset = () => {
-    window.location = '/'
-    this.setState({ quizResults: {} })
-  }
 
   handleChange = (event) => {
     this.setState({ [event.target.name]: event.target.value })
@@ -55,7 +56,7 @@ class Questionnaire extends Component {
     return (
       <>
         {this.state.quizResults && (
-          <Result quizResults={this.state.quizResults} reset={this.reset} />
+          <Result quizResults={this.state.quizResults} />
         )}
         <form onSubmit={(event) => this.handleFormSubmit(event)}>
           <h4 className='search-instructions'>
