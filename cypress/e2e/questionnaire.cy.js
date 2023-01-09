@@ -13,16 +13,10 @@ describe('question page', () => {
     it('should be able to change slider values', () => {
         cy.get('#familyRating')
         .should('have.attr', 'value', 3)
-        cy.get('body')
-        .tab()
-        .tab()
-        .tab()
-        .tab()
-        .tab()
-        .tab()
-        .trigger('keydown', { keyCode: 39 })
-        cy.wait(500)
+ 
         cy.get('#familyRating')
+        .trigger('keydown', { keyCode: 39 })
+        .wait(500)
         .trigger('keyUp', { keyCode: 39 })
 
 
