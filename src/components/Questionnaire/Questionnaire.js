@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { API_ROUTES } from '../../utilis/constants'
+import { fetchResults } from '../../utilis/apiCalls'
 import Result from '../Results/Results'
 import './Questionnaire.css'
 
@@ -17,39 +17,20 @@ class Questionnaire extends Component {
     }
   }
 
-  async fetchResults() {
-    try {
-      const { size, familyRating, trainability, groomingNeeded, energyLevel } =
-        this.state.quizInputs
-
-      const response = await fetch(
-        `${API_ROUTES.GET_RESULTS}${size}/${familyRating}/${trainability}/${groomingNeeded}/${energyLevel}`
-      )
-      if (!response.ok) {
-        throw new Error(`The following error occured: ${response}`)
-      }
-
-      const data = await response.json()
-
-      this.setState({ quizResults: data })
-      
-    } catch (err) {
-      console.error(err)
-    } finally {
-      this.setState({ isLoading: false })
+  componentDidMount() {
+    if (this.state.quizResults) {
+      this.setState({ quizResults: {} })
     }
   }
 
-  getResults = (dogSearch) => {
-    this.setState({ quizInputs: dogSearch }, () => {
-      this.fetchResults()
-    })
+  getResults = async (dogSearch) => {
+    await this.setState({ quizInputs: dogSearch })
+    const response = await fetchResults(this.state.quizInputs).catch((error) =>
+      alert(error)
+    )
+    this.setState({ quizResults: response })
   }
 
-  reset = () => {
-    window.location = '/'
-    this.setState({ quizResults: {} })
-  }
 
   handleChange = (event) => {
     this.setState({ [event.target.name]: event.target.value })
@@ -75,7 +56,7 @@ class Questionnaire extends Component {
     return (
       <>
         {this.state.quizResults && (
-          <Result quizResults={this.state.quizResults} reset={this.reset} />
+          <Result quizResults={this.state.quizResults} />
         )}
         <form onSubmit={(event) => this.handleFormSubmit(event)}>
           <h4 className='search-instructions'>
@@ -175,7 +156,9 @@ class Questionnaire extends Component {
               <p>Lots of daily exercise</p>
             </div>
           </div>
-          <button className="submit-button" type='submit'>Submit</button>
+          <button className='submit-button' type='submit'>
+            Submit
+          </button>
         </form>
       </>
     )
