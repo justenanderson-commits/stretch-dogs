@@ -1,5 +1,5 @@
 export const API_ROUTES = {
-  GET_RESULTS: `https://pawfect-match-api.herokuapp.com/api/v1/dogs/`,
+  GET_RESULTS: `http://localhost:3001/api/v1/dogs`,
 }
 
 export const APP_ROUTES = {

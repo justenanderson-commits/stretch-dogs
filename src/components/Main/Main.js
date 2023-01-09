@@ -6,7 +6,7 @@ import dog from '../../assets/images/dog-sitting.gif'
 function Main() {
   return (
     <div className='Main'>
-      <h1 className='title'>WELCOME TO DOG</h1>
+      <h1 className='title'>Welcome to Pawfect Match!</h1>
       <h3 className='brief-about'>
         This app was created to help you find the perfect dog to give its
         forever home, take the quiz below and find the perfect kind of dog for

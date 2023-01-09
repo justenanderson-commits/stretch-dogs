@@ -3,7 +3,6 @@ import './Results.css'
 import Card from '../Card/Card'
 
 const Result = ({ quizResults, reset }) => {
-  console.log(quizResults)
   let topDogs = null
 
   if (JSON.stringify(quizResults) !== '{}') {
