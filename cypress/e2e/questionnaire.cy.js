@@ -13,16 +13,10 @@ describe('question page', () => {
     it('should be able to change slider values', () => {
         cy.get('#familyRating')
         .should('have.attr', 'value', 3)
-        cy.get('body')
-        .tab()
-        .tab()
-        .tab()
-        .tab()
-        .tab()
-        .tab()
-        .trigger('keydown', { keyCode: 39 })
-        cy.wait(500)
+ 
         cy.get('#familyRating')
+        .trigger('keydown', { keyCode: 39 })
+        .wait(500)
         .trigger('keyUp', { keyCode: 39 })
 
 
@@ -32,8 +26,8 @@ describe('question page', () => {
     it('should be able to change all slider values', () => {
         
     })
-    it('sbhould be able to submit', () => {
-        cy.get('button').click()
+    it('should be able to submit', () => {
+        cy.get('.submit-button').click()
         cy.intercept({method: 'GET',
         url: 'http://localhost:3001/api/v1/dogs/3/4/5/5/5'},
         { fixture: 'dogs' })
