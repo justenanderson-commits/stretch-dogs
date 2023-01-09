@@ -1,4 +1,4 @@
-const API_URL = 'https://pawfect-match-api.herokuapp.com'
+const API_URL = process.env.REACT_APP_API_URL
 
 export const API_ROUTES = {
   GET_RESULTS: `${API_URL}/api/v1/dogs`,
