@@ -33,18 +33,18 @@ describe('landing page', () => {
 
     it('should be able to navigate to the questionnaire page and back', () => {
         cy.get('.quiz-link').click()
-        .url('eq', 'http://localhost:3000/quiz')
+        cy.url().should('eq', 'http://localhost:3000/quiz')
         cy.get('.search-instructions')
         .contains('Move each slider')
         cy.get('.header__link > img').click()
-        .url('eq', 'http://localhost:3000/')
+        cy.url().should('eq', 'http://localhost:3000/')
     })
     it('should be able to navigate to the about page and back', () => {
         cy.get('[href="/about"]').click()
-        .url('eq', 'http://localhost:3000/about')
+        cy.url().should('eq', 'http://localhost:3000/about')
         cy.get('.about__text')
         .contains('This will be where we put')
         cy.get('.header__link > img').click()
-        .url('eq', 'http://localhost:3000/')
+        cy.url().should('eq', 'http://localhost:3000/')
     })
 })
