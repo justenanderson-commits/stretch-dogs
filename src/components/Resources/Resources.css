@@ -39,10 +39,6 @@
   margin-right: 2%;
 }
 
-.resources li {
-  list-style: none;
-}
-
 .resources__text, a {
   width: 20%;
 }
