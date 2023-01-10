@@ -3,7 +3,7 @@ describe('Landing page user flow', () => {
         cy.visit('localhost:3000/')
     })
 
-    it('should show the landing page', () => {
+    it('Should show the landing page', () => {
         cy.get('.title')
         .contains('Welcome to Pawfect Match!')
         cy.get('.brief-about')
@@ -12,7 +12,7 @@ describe('Landing page user flow', () => {
         .contains('Take the quiz now!')
     })
     
-    it('should show the header', () => {
+    it('Should show the header', () => {
         cy.get('.header-container').within(() => {
             cy.get('a').eq(0).should('have.descendants', 'img')
             cy.get('a').eq(1).should('contain', 'About')
@@ -21,7 +21,7 @@ describe('Landing page user flow', () => {
         })
     })
 
-    it('should show the footer', () => {
+    it('Should show the footer', () => {
         cy.get('.footer-container').within(() => {
             cy.get('a').eq(0).should('contain', 'Repo')
             cy.get('a').eq(1).should('contain', 'Justen Anderson')
@@ -31,7 +31,7 @@ describe('Landing page user flow', () => {
         })
     })
 
-    it('should be able to navigate to the questionnaire page and back', () => {
+    it('Should be able to navigate to the questionnaire page and back', () => {
         cy.get('.quiz-link').click()
         cy.url().should('eq', 'http://localhost:3000/quiz')
         cy.get('.search-instructions')
@@ -40,7 +40,7 @@ describe('Landing page user flow', () => {
         cy.url().should('eq', 'http://localhost:3000/')
     })
 
-    it('should be able to navigate to the about page and back', () => {
+    it('Should be able to navigate to the about page and back', () => {
         cy.get('[href="/about"]').click()
         cy.url().should('eq', 'http://localhost:3000/about')
         cy.get('.about__text')
@@ -49,7 +49,7 @@ describe('Landing page user flow', () => {
         cy.url().should('eq', 'http://localhost:3000/')
     })
 
-    it('should be able to navigate to the resources page and back', () => {
+    it('Should be able to navigate to the resources page and back', () => {
         cy.get('[href="/resources"]').click()
         cy.url().should('eq', 'http://localhost:3000/resources')
         cy.get('.header__link > img').click()

@@ -1,4 +1,4 @@
-describe('question page', () => {
+describe('Questionnaire user flow', () => {
     beforeEach(() => {
         cy.visit('localhost:3000/quiz')
     })
