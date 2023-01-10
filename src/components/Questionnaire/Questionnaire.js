@@ -46,7 +46,6 @@ class Questionnaire extends Component {
       energyLevel: this.state.energyLevel,
     }
 
-    console.log('WHAT AM I', newDogSearch)
     this.getResults(newDogSearch)
 
     this.setState({ showResults: true })

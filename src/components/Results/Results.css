@@ -12,13 +12,16 @@
   letter-spacing: 2px;
   font-size: 3rem;
   color: #3A716F;
-  width: 40%;
+  min-width: 35%;
+  max-width: 45%;
+  line-height: 1.7;
 }
 
 .results-card-container {
   display: flex;
   flex: row;
   justify-content: space-evenly;
+  width: 70vw;
 }
 
 .home-button {
@@ -33,6 +36,8 @@
   font-size: 30px;
   font-weight: 500;
   transition: 0.3s;
+  margin-top: .5em;
+  
 }
 
 .home-button:hover {
