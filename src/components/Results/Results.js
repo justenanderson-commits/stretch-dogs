@@ -7,7 +7,14 @@ const Result = ({ quizResults }) => {
 
   if (JSON.stringify(quizResults) !== '{}') {
     topDogs = quizResults.map((dog, index) => {
-      return <Card key={`breed ${index}`} breed={dog.breed} img={dog.img} />
+      return (
+        <Card
+          key={`breed ${index}`}
+          breed={dog.breed}
+          img={dog.img}
+          description={dog.description}
+        />
+      )
     })
   }
 
