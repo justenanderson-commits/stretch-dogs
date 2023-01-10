@@ -1,4 +1,4 @@
-describe('landing page', () => {
+describe('Landing page user flow', () => {
     beforeEach(() => {
         cy.visit('localhost:3000/')
     })
@@ -39,11 +39,19 @@ describe('landing page', () => {
         cy.get('.header__link > img').click()
         cy.url().should('eq', 'http://localhost:3000/')
     })
+
     it('should be able to navigate to the about page and back', () => {
         cy.get('[href="/about"]').click()
         cy.url().should('eq', 'http://localhost:3000/about')
         cy.get('.about__text')
         .contains('This will be where we put')
+        cy.get('.header__link > img').click()
+        cy.url().should('eq', 'http://localhost:3000/')
+    })
+
+    it('should be able to navigate to the resources page and back', () => {
+        cy.get('[href="/resources"]').click()
+        cy.url().should('eq', 'http://localhost:3000/resources')
         cy.get('.header__link > img').click()
         cy.url().should('eq', 'http://localhost:3000/')
     })
