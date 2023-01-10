@@ -19,7 +19,7 @@ function App() {
           <Route path='/' element={<Main />} />
           <Route path={APP_ROUTES.ABOUT} element={<About />} />
           <Route path={APP_ROUTES.QUIZ} element={<Questionnaire />} />
-          <Route path={APP_ROUTES.QUIZ} element={<Resources />} />
+          <Route path={APP_ROUTES.RESOURCES} element={<Resources />} />
         </Routes>
         <Footer />
       </Router>
