@@ -4,7 +4,7 @@ This application allows users to browse through 12 of the most popular, AKC-reco
 
 Link to [deployed app](https://pawfect-match.vercel.app/)
 
-(Add GIF here)
+https://user-images.githubusercontent.com/104015966/211460060-672a183f-7a8a-4e97-b9e2-c3b5f3cad53d.mp4
 
 ## Installation Instructions:
 1. Go to [this repo](https://github.com/Mrcolin99/stretch-dogs) on Github
