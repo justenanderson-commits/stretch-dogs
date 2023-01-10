@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { fetchResults } from '../../utilis/apiCalls'
 import Result from '../Results/Results'
 import './Questionnaire.css'
+import Error from '../Error/Error'
 
 class Questionnaire extends Component {
   constructor() {
@@ -42,6 +43,11 @@ class Questionnaire extends Component {
     this.setState({ [event.target.name]: event.target.value })
   }
 
+  handleFormError = (event) => {
+    event.preventDefault()
+    console.log('ERROR')
+  }
+
   handleFormSubmit = (event) => {
     event.preventDefault()
     const newDogSearch = {
@@ -64,7 +70,7 @@ class Questionnaire extends Component {
         {this.state.quizResults && (
           <Result quizResults={this.state.quizResults} />
         )}
-        <form onSubmit={(event) => this.handleFormSubmit(event)}>
+        <form onSubmit={(event) => this.state.error ? this.handleFormError(event) : this.handleFormSubmit(event)}>
           <h4 className='search-instructions'>
             Move each slider to find breeds that will best fit your lifestyle.
           </h4>
@@ -162,6 +168,9 @@ class Questionnaire extends Component {
               <p>Lots of daily exercise</p>
             </div>
           </div>
+          {this.state.error && (
+        <Error></Error>
+      )}
           <button className='submit-button' type='submit'>
             Submit
           </button>
