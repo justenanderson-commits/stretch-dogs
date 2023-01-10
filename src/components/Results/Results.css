@@ -27,7 +27,7 @@
   width: fit-content;
   background: #ffffff;
   color: #0d0c22;
-  padding: 10px 16px;
+  padding: 8px 14px;
   border: none;
   border-radius: 8px;
   font-size: 30px;
@@ -40,3 +40,12 @@
   color: #f3f3f4;
 }
 
+.cat{
+  height: 40%;
+  width: 50%;
+}
+
+.cat-text{
+  font-family: Poppins-Medium;
+  color: #3A716F;
+}
