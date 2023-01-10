@@ -14,6 +14,7 @@ class Questionnaire extends Component {
       energyLevel: '3',
       quizInputs: {},
       quizResults: null,
+      error: null,
     }
   }
 
@@ -25,9 +26,15 @@ class Questionnaire extends Component {
 
   getResults = async (dogSearch) => {
     await this.setState({ quizInputs: dogSearch })
-    const response = await fetchResults(this.state.quizInputs).catch((error) =>
-      alert(error)
-    )
+    const response = await fetchResults(this.state.quizInputs).catch((error) => {
+     if (error) {
+      this.setState({ error: true })
+      console.log('problem')
+    } else {
+      this.setState({ error: false })
+      console.log('no problem')
+    }
+  })
     this.setState({ quizResults: response })
   }
 
