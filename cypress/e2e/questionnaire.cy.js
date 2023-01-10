@@ -4,10 +4,11 @@ describe('Questionnaire user flow', () => {
     })
     it('Should contain 5 sliders', () => {
         cy.get('.slider').should('have.length', 5)
-        cy.get('#size')
-        cy.get('#familyRating')
-        cy.get('#trainability')
-        cy.get('#groomingNeeded')
+        cy.get('.slider').eq(0).should('have.id', 'size')
+        cy.get('.slider').eq(1).should('have.id', 'familyRating')
+        cy.get('.slider').eq(2).should('have.id', 'trainability')
+        cy.get('.slider').eq(3).should('have.id', 'groomingNeeded')
+        cy.get('.slider').eq(4).should('have.id', 'energyLevel')
         cy.get('#energyLevel')
     })
     it('Should be able to change slider values', () => {
