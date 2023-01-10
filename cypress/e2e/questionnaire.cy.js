@@ -9,7 +9,6 @@ describe('Questionnaire user flow', () => {
         cy.get('.slider').eq(2).should('have.id', 'trainability')
         cy.get('.slider').eq(3).should('have.id', 'groomingNeeded')
         cy.get('.slider').eq(4).should('have.id', 'energyLevel')
-        cy.get('#energyLevel')
     })
     it('Should be able to change slider values', () => {
         cy.get('input[type=range]').eq(0)
