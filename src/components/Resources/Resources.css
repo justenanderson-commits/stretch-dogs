@@ -39,6 +39,20 @@
   margin-right: 2%;
 }
 
-.resources__text {
+.resources__text, a {
   width: 20%;
+}
+
+.resources a {
+  margin: 0;
+  font-family: Poppins-Medium;
+  font-size: 1.6rem;
+  color: #001275;
+}
+
+.resources a:hover {
+  margin: 0;
+  font-family: Poppins-Medium;
+  font-size: 1.7rem;
+  color: #820495;
 }
