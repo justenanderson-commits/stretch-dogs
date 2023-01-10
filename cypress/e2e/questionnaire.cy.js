@@ -54,9 +54,9 @@ describe('Questionnaire user flow', () => {
     cy.get('input[type=range]').eq(3).invoke('val', '5').trigger('change')
     cy.get('input[type=range]').eq(4).invoke('val', '5').trigger('change')
     cy.intercept(
-      'GET',
       'https://pawfect-match-api.herokuapp.com/api/v1/dogs/3/3/3/3/3',
       {
+        method: 'GET',
         fixture: '../fixtures/single_dog.json',
       }
     )
