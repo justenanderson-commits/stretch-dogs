@@ -2,7 +2,7 @@
 ## Abstract:
 This application allows users to browse through 12 of the most popular, AKC-recognized dog breeds in America to research and find the breed that's right for them (based on the dog's size, energy level, etc). 
 
-Link to ([deployed app](https://pawfect-match.vercel.app/))
+Link to [deployed app](https://pawfect-match.vercel.app/)
 
 (Add GIF here)
 
