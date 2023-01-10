@@ -3,7 +3,6 @@ import './Header.css'
 import { Link } from 'react-router-dom'
 import { APP_ROUTES } from '../../utilis/constants'
 import paw from '../../assets/images/paw-print-heart.gif'
-import App from '../App/App'
 
 const Header = () => {
   return (
