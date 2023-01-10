@@ -8,10 +8,8 @@ export default function About() {
         <h1>About this app</h1>
         <img src={about} alt='happy human with their cute dog' />
         <p className='about__text'>
-          This will be where we put the purpose of this app, which is to help
-          people find a dog compatible with their lifestyles in order to be a forever
-          home for the pet that they adopt. We need some statistics about animals being
-          re-sheltered.
+          At Pawfect Match, our mission is to help
+          people find a dog compatible with their lifestyle so their pup can have a forever home. Sadly, only an estimated 10% od dogs born today will find a permanent home. Around 3.9 million dogs are abandoned or given up to shelters each year, and about 30% of dogs of them are purebreds. Check our our <a href="./quiz">breed finder quiz</a> to learn if one is right for you!
         </p>
       </div>
     </div>

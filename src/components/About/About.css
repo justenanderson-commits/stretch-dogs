@@ -42,3 +42,18 @@
 .about__text {
   width: 20%;
 }
+
+
+.about a {
+  margin: 0;
+  font-family: Poppins-Medium;
+  font-size: 1.6rem;
+  color: #001275;
+}
+
+.about a:hover {
+  margin: 0;
+  font-family: Poppins-Medium;
+  font-size: 1.7rem;
+  color: #820495;
+}
