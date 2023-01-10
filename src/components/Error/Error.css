@@ -18,7 +18,7 @@
     margin-top: 5px;
 }
 
-.home {
+.reset-btn {
     font-family: Poppins-Medium;
     color: #f8f0e5;
     background-color: #3A716F;
@@ -43,7 +43,7 @@
     margin: 5px;
 }
 
-.home:hover {
+.reset-btn:hover {
     font-family: Poppins-Medium;
     font-size: large;
     color: #f8f0e5;
@@ -56,8 +56,9 @@
     margin: 5px;
 }
 
-.main-msg {
-    color: #0a4c4b;
+.error-msg {
+    font-size: 22px;
+    color: #980606;
     font-family: Poppins-Medium;
 }
 

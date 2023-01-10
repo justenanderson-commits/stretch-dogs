@@ -28,17 +28,17 @@ class Questionnaire extends Component {
 
   getResults = async (dogSearch) => {
     await this.setState({ quizInputs: dogSearch })
-    const response = await fetchResults(this.state.quizInputs).catch((error) => {
-     if (error) {
-      this.setState({ error: true, errorMessage: error })
-    } else {
-      this.setState({ error: false })
-    }
-    console.log(this.state.error)
-  })
+    const response = await fetchResults(this.state.quizInputs).catch(
+      (error) => {
+        if (error) {
+          this.setState({ error: true, errorMessage: error })
+        } else {
+          this.setState({ error: false })
+        }
+      }
+    )
     this.setState({ quizResults: response })
   }
-
 
   handleChange = (event) => {
     this.setState({ [event.target.name]: event.target.value })
@@ -46,7 +46,6 @@ class Questionnaire extends Component {
 
   handleFormError = (event) => {
     event.preventDefault()
-    console.log('ERROR')
   }
 
   handleFormSubmit = (event) => {
@@ -70,7 +69,13 @@ class Questionnaire extends Component {
         {this.state.quizResults && (
           <Result quizResults={this.state.quizResults} />
         )}
-        <form onSubmit={(event) => this.state.error ? this.handleFormError(event) : this.handleFormSubmit(event)}>
+        <form
+          onSubmit={(event) =>
+            this.state.error
+              ? this.handleFormError(event)
+              : this.handleFormSubmit(event)
+          }
+        >
           <h4 className='search-instructions'>
             Move each slider to find breeds that will best fit your lifestyle.
           </h4>
@@ -168,9 +173,7 @@ class Questionnaire extends Component {
               <p>Lots of daily exercise</p>
             </div>
           </div>
-          {this.state.error && (
-        <Error></Error>
-      )}
+          {this.state.error && <Error></Error>}
           <button className='submit-button' type='submit'>
             Submit
           </button>
