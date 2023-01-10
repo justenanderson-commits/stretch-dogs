@@ -6,6 +6,7 @@ import About from '../About'
 import { APP_ROUTES } from '../../utilis/constants'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Questionnaire from '../Questionnaire/Questionnaire'
+import PropTypes from 'prop-types'
 
 function App() {
 

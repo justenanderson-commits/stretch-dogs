@@ -2,6 +2,7 @@ import React from 'react'
 import './Results.css'
 import Card from '../Card/Card'
 import cat from '../../assets/images/cat.gif'
+import PropTypes from 'prop-types'
 
 const Result = ({ quizResults }) => {
   let topDogs = null
@@ -37,3 +38,8 @@ const Result = ({ quizResults }) => {
 }
 
 export default Result
+
+
+Results.propTypes = {
+  quizResults: PropTypes.object.isRequired
+}

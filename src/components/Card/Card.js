@@ -1,6 +1,7 @@
 import React from 'react'
 import MicroModal from 'react-micro-modal'
 import './Card.css'
+import PropTypes from 'prop-types'
 
 const Card = ({ breed, img }) => {
   return (
