@@ -69,7 +69,9 @@ For accessability we chose large font and neutral, high-contrast colors. 100% Li
 
 ## Wins and Challenges
 Wins
-- 
+- Successfully self-taught back-end technologies to develop a full-stack application.
+- Effectively project managed distributed team project using project management tools.
+- It's cute :)
 
 Challenges
 - Having a 2-week break start after 2 days of project work was challenging. We all felt rusty and a bit disconnected from the challenge at-hand after the break.
