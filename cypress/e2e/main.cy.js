@@ -1,4 +1,4 @@
-describe('Landing page user flow', () => {
+describe('Landing Page User Flow', () => {
     beforeEach(() => {
         cy.visit('localhost:3000/')
     })

@@ -2,7 +2,7 @@ describe('Questionnaire user flow', () => {
     beforeEach(() => {
         cy.visit('localhost:3000/quiz')
     })
-    it('should contain 5 sliders', () => {
+    it('Should contain 5 sliders', () => {
         cy.get('.slider').should('have.length', 5)
         cy.get('#size')
         cy.get('#familyRating')
@@ -10,13 +10,13 @@ describe('Questionnaire user flow', () => {
         cy.get('#groomingNeeded')
         cy.get('#energyLevel')
     })
-    it('should be able to change slider values', () => {
+    it('Should be able to change slider values', () => {
         cy.get('input[type=range]').eq(0)
             .invoke('val', '5')
             .trigger('change')
             .should('have.value', 5)
     })
-    it('should be able to change all slider values', () => {
+    it('Should be able to change all slider values', () => {
         cy.get('input[type=range]').eq(0)
             .invoke('val', '5')
             .trigger('change')
@@ -38,7 +38,7 @@ describe('Questionnaire user flow', () => {
             .trigger('change')
             .should('have.value', 5)
     })
-    it('should be able to submit', () => {
+    it('Should be able to submit', () => {
         cy.get('input[type=range]').eq(0)
             .invoke('val', '5')
             .trigger('change')
