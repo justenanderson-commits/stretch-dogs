@@ -16,6 +16,7 @@ class Questionnaire extends Component {
       quizInputs: {},
       quizResults: null,
       error: false,
+      errorMessage: '',
     }
   }
 
@@ -29,7 +30,7 @@ class Questionnaire extends Component {
     await this.setState({ quizInputs: dogSearch })
     const response = await fetchResults(this.state.quizInputs).catch((error) => {
      if (error) {
-      this.setState({ error: true })
+      this.setState({ error: true, errorMessage: error })
     } else {
       this.setState({ error: false })
     }

@@ -23,7 +23,7 @@ const Error = () => {
         >
             {(close) => (
                 <div className='modal'>
-                    <p>Something went wrong, it was probably our fault</p>
+                    <p className='modal-msg'>Something went wrong, it was probably our fault</p>
                     <button className='close-modal' onClick={close}>
                         Close
                     </button>
