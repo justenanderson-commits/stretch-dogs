@@ -34,8 +34,8 @@
 }
 
 .resources img {
-  width: 70vh;
-  height: 70vh;
+  width: 50vh;
+  height: 50vh;
   margin-right: 2%;
 }
 
@@ -48,6 +48,7 @@
   font-family: Poppins-Medium;
   font-size: 1.6rem;
   color: #001275;
+  white-space: nowrap;
 }
 
 .resources a:hover {
@@ -55,4 +56,5 @@
   font-family: Poppins-Medium;
   font-size: 1.7rem;
   color: #820495;
+  
 }
