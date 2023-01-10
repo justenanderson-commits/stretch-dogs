@@ -71,7 +71,7 @@ class Questionnaire extends Component {
               name='size'
               min='1'
               max='5'
-              defaultValue='3'
+              value={this.state.size}
               onChange={(event) => this.handleChange(event)}
             />
 
@@ -90,7 +90,7 @@ class Questionnaire extends Component {
               name='familyRating'
               min='1'
               max='5'
-              defaultValue='3'
+              value={this.state.familyRating}
               onChange={(event) => this.handleChange(event)}
             />
 
@@ -109,7 +109,7 @@ class Questionnaire extends Component {
               name='trainability'
               min='1'
               max='5'
-              defaultValue='3'
+              value={this.state.trainability}
               onChange={(event) => this.handleChange(event)}
             />
 
@@ -128,7 +128,7 @@ class Questionnaire extends Component {
               name='groomingNeeded'
               min='1'
               max='5'
-              defaultValue='3'
+              value={this.state.groomingNeeded}
               onChange={(event) => this.handleChange(event)}
             />
 
@@ -147,7 +147,7 @@ class Questionnaire extends Component {
               name='energyLevel'
               min='1'
               max='5'
-              defaultValue='3'
+              value={this.state.energyLevel}
               onChange={(event) => this.handleChange(event)}
             />
 

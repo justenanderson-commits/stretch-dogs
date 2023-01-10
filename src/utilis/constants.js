@@ -6,6 +6,7 @@ export const API_ROUTES = {
 
 export const APP_ROUTES = {
   ABOUT: `/about`,
+  RESOURCES: '/resources',
   QUIZ: '/quiz',
   RESULTS: '/results',
 }
@@ -15,5 +16,5 @@ export const GITHUB_ROUTES = {
   JUSTEN: 'https://github.com/justenanderson-commits',
   TRICIA: 'https://github.com/tricia-holmes/',
   COLIN: 'https://github.com/Mrcolin99',
-  DANA: '"https://github.com/tramtram1130"',
+  DANA: 'https://github.com/tramtram1130',
 }
