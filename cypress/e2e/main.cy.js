@@ -5,11 +5,11 @@ describe('Landing Page User Flow', () => {
 
     it('Should show the landing page', () => {
         cy.get('.title')
-        .contains('Welcome to Pawfect Match!')
+            .should('contain', 'Welcome to Pawfect Match!')
         cy.get('.brief-about')
-        .contains('This app was created to help you')
+            .should('contain', 'This app was created to help you')
         cy.get('.quiz-link')
-        .contains('Take the quiz now!')
+            .should('contain', 'Take the quiz now!')
     })
     
     it('Should show the header', () => {
