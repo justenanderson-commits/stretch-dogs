@@ -1,0 +1,12 @@
+[
+  {
+    "breed": "Boykin Spaniel",
+    "size": 3,
+    "family_rating": 3,
+    "trainability": 3,
+    "grooming_needed": 3,
+    "energy_level": 3,
+    "img": "https://upload.wikimedia.org/wikipedia/commons/a/ae/BoykinSpaniel.jpg",
+    "description": "A medium-sized flushing and retrieving dog known for its rich brown coat, the Boykin Spaniel is avid, eager, merry, and trainable."
+  }
+]
