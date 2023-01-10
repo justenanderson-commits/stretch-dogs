@@ -14,7 +14,7 @@ class Questionnaire extends Component {
       energyLevel: '3',
       quizInputs: {},
       quizResults: null,
-      error: null,
+      error: false,
     }
   }
 
@@ -29,11 +29,10 @@ class Questionnaire extends Component {
     const response = await fetchResults(this.state.quizInputs).catch((error) => {
      if (error) {
       this.setState({ error: true })
-      console.log('problem')
     } else {
       this.setState({ error: false })
-      console.log('no problem')
     }
+    console.log(this.state.error)
   })
     this.setState({ quizResults: response })
   }
