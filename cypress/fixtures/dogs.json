@@ -269,6 +269,15 @@
           "grooming_needed":2,
           "energy_level":4,
           "img":"https://www.akc.org/wp-content/uploads/2017/11/Bullmastiff-standing-in-a-field.jpg"
+       },
+       {
+         "breed": "Scottish Herbivorous Nottacanis",
+         "size": 5,
+         "family_rating": 5,
+         "trainability": 5,
+         "grooming_needed": 5,
+         "energy_level": 5,
+         "img": "https://www.helpfulhorsehints.com/wp-content/uploads/Shetland-Pony-in-Grass-Field-1024x597.jpg"
        }
     ]
  }

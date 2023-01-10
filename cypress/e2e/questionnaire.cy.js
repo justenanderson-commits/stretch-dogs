@@ -1,35 +1,62 @@
-describe('question page', () => {
+describe('Questionnaire user flow', () => {
     beforeEach(() => {
         cy.visit('localhost:3000/quiz')
     })
-    it('should contain 5 sliders', () => {
-        cy.visit('localhost:3000/quiz')
-        cy.get('#size')
-        cy.get('#familyRating')
-        cy.get('#trainability')
-        cy.get('#groomingNeeded')
-        cy.get('#energyLevel')
+    it('Should contain 5 sliders', () => {
+        cy.get('.slider').should('have.length', 5)
+        cy.get('.slider').eq(0).should('have.id', 'size')
+        cy.get('.slider').eq(1).should('have.id', 'familyRating')
+        cy.get('.slider').eq(2).should('have.id', 'trainability')
+        cy.get('.slider').eq(3).should('have.id', 'groomingNeeded')
+        cy.get('.slider').eq(4).should('have.id', 'energyLevel')
     })
-    it('should be able to change slider values', () => {
-        cy.get('#familyRating')
-        .should('have.attr', 'value', 3)
- 
-        cy.get('#familyRating')
-        .trigger('keydown', { keyCode: 39 })
-        .wait(500)
-        .trigger('keyUp', { keyCode: 39 })
 
+    it('Should be able to change slider values', () => {
+        cy.get('input[type=range]').eq(0)
+            .invoke('val', '5')
+            .trigger('change')
+            .should('have.value', 5)
+    })
+    
+    it('Should be able to change all slider values', () => {
+        cy.get('input[type=range]').eq(0)
+            .invoke('val', '5')
+            .trigger('change')
+            .should('have.value', 5)
+        cy.get('input[type=range]').eq(1)
+            .invoke('val', '2')
+            .trigger('change')
+            .should('have.value', 2)
+        cy.get('input[type=range]').eq(2)
+            .invoke('val', '1')
+            .trigger('change')
+            .should('have.value', 1)
+        cy.get('input[type=range]').eq(3)
+            .invoke('val', '4')
+            .trigger('change')
+            .should('have.value', 4)
+        cy.get('input[type=range]').eq(4)
+            .invoke('val', '5')
+            .trigger('change')
+            .should('have.value', 5)
+    })
 
-        cy.get('#familyRating')
-        .should('have.attr', 'value', 4)
-    })
-    it('should be able to change all slider values', () => {
-        
-    })
-    it('should be able to submit', () => {
-        cy.get('.submit-button').click()
-        cy.intercept({method: 'GET',
-        url: 'http://localhost:3001/api/v1/dogs/3/4/5/5/5'},
-        { fixture: 'dogs' })
+    it('Should be able to submit', () => {
+        cy.get('input[type=range]').eq(0)
+            .invoke('val', '5')
+            .trigger('change')
+        cy.get('input[type=range]').eq(1)
+            .invoke('val', '5')
+            .trigger('change')
+        cy.get('input[type=range]').eq(2)
+            .invoke('val', '5')
+            .trigger('change')
+        cy.get('input[type=range]').eq(3)
+            .invoke('val', '5')
+            .trigger('change')
+        cy.get('input[type=range]').eq(4)
+            .invoke('val', '5')
+            .trigger('change')
+        cy.get('button').click()
     })
 })

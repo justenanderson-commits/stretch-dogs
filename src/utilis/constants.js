@@ -5,10 +5,10 @@ export const API_ROUTES = {
 }
 
 export const APP_ROUTES = {
-  ABOUT: '/about',
+  ABOUT: `/about`,
+  RESOURCES: '/resources',
   QUIZ: '/quiz',
   RESULTS: '/results',
-  RESOURCES: '/resources'
 }
 
 export const GITHUB_ROUTES = {
