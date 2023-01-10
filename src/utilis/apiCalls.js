@@ -15,7 +15,5 @@ export const fetchResults = async (quizInputs) => {
 
   const data = await response.json()
 
-  console.log("WHAT AM I", data)
-
   return data
 }

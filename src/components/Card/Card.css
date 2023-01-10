@@ -1,7 +1,7 @@
 .results-card {
   background-color: white;
   border-radius: 0rem 3.5rem 0rem 3.5rem;
-  width: 25%;
+  width: 35%;
   height: fit-content;
 }
 
@@ -20,10 +20,11 @@
   color: #0a4c4b;
 }
 
-.dog-button, .close-modal-button {
+.dog-button,
+.close-modal-button {
   background: #f3f3f4;
   color: #0d0c22;
-  padding: .5rem;
+  padding: 0.5rem;
   margin: 1rem 0rem 1rem 0rem;
   border: none;
   border-radius: 8px;
@@ -39,6 +40,16 @@
 }
 
 .modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 30vw;
   text-align-last: center;
+  font-family: Poppins-Medium;
+  font-size: 20px;
+}
+
+.modal img {
+  width: 15vw;
 }

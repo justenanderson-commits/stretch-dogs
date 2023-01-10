@@ -6,7 +6,7 @@ export default function Resources() {
     <div className="resources">
       <div className="resources__container">
         <h1>Bringing home a new pup?</h1>
-        <img src={dogHome} alt="happy pup on the way home" />
+        <img src={dogHome} alt="happy pup ready to go home" />
          <p className="resources__text">
           Whether adopting a rescue or getting a new puppy, it's a big change
           for everyone! Here are a few helpful tips:
