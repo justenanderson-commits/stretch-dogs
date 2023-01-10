@@ -10,12 +10,14 @@ describe('Questionnaire user flow', () => {
         cy.get('.slider').eq(3).should('have.id', 'groomingNeeded')
         cy.get('.slider').eq(4).should('have.id', 'energyLevel')
     })
+
     it('Should be able to change slider values', () => {
         cy.get('input[type=range]').eq(0)
             .invoke('val', '5')
             .trigger('change')
             .should('have.value', 5)
     })
+    
     it('Should be able to change all slider values', () => {
         cy.get('input[type=range]').eq(0)
             .invoke('val', '5')
@@ -38,6 +40,7 @@ describe('Questionnaire user flow', () => {
             .trigger('change')
             .should('have.value', 5)
     })
+
     it('Should be able to submit', () => {
         cy.get('input[type=range]').eq(0)
             .invoke('val', '5')

@@ -13,12 +13,14 @@
   font-size: 3rem;
   color: #3A716F;
   width: 40%;
+  z-index: 9999;
 }
 
 .results-card-container {
   display: flex;
   flex: row;
   justify-content: space-evenly;
+  height: 40vh;
 }
 
 .home-button {
@@ -27,7 +29,7 @@
   width: fit-content;
   background: #ffffff;
   color: #0d0c22;
-  padding: 10px 16px;
+  padding: 8px 14px;
   border: none;
   border-radius: 8px;
   font-size: 30px;
@@ -40,3 +42,12 @@
   color: #f3f3f4;
 }
 
+.cat{
+  height: 60%;
+  width: 60%;
+}
+
+.cat-text{
+  font-family: Poppins-Medium;
+  color: #3A716F;
+}
