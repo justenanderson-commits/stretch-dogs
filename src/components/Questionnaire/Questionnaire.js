@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { fetchResults } from '../../utilis/apiCalls'
 import Result from '../Results/Results'
 import './Questionnaire.css'
+import Error from '../Error/Error'
 
 class Questionnaire extends Component {
   constructor() {
@@ -14,6 +15,8 @@ class Questionnaire extends Component {
       energyLevel: '3',
       quizInputs: {},
       quizResults: null,
+      error: false,
+      errorMessage: '',
     }
   }
 
@@ -25,15 +28,25 @@ class Questionnaire extends Component {
 
   getResults = async (dogSearch) => {
     await this.setState({ quizInputs: dogSearch })
-    const response = await fetchResults(this.state.quizInputs).catch((error) =>
-      alert(error)
-    )
+    const response = await fetchResults(this.state.quizInputs).catch((error) => {
+     if (error) {
+      this.setState({ error: true, errorMessage: error })
+    } else {
+      this.setState({ error: false })
+    }
+    console.log(this.state.error)
+  })
     this.setState({ quizResults: response })
   }
 
 
   handleChange = (event) => {
     this.setState({ [event.target.name]: event.target.value })
+  }
+
+  handleFormError = (event) => {
+    event.preventDefault()
+    console.log('ERROR')
   }
 
   handleFormSubmit = (event) => {
@@ -58,7 +71,7 @@ class Questionnaire extends Component {
         {this.state.quizResults && (
           <Result quizResults={this.state.quizResults} />
         )}
-        <form onSubmit={(event) => this.handleFormSubmit(event)}>
+        <form onSubmit={(event) => this.state.error ? this.handleFormError(event) : this.handleFormSubmit(event)}>
           <h4 className='search-instructions'>
             Move each slider to find breeds that will best fit your lifestyle.
           </h4>
@@ -156,6 +169,9 @@ class Questionnaire extends Component {
               <p>Lots of daily exercise</p>
             </div>
           </div>
+          {this.state.error && (
+        <Error></Error>
+      )}
           <button className='submit-button' type='submit'>
             Submit
           </button>
