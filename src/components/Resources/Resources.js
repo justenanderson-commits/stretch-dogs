@@ -1,16 +1,15 @@
 import './Resources.css'
 import dogHome from '../../assets/images/dog-home.gif'
-// import about from '../../assets/images/about.gif'
 
-export default function About() {
+export default function Resources() {
   return (
     <div className="resources">
       <div className="resources__container">
         <h1>Bringing home a new pup?</h1>
         <img src={dogHome} alt="happy pup on the way home" />
-        <p className="resources__text">
-          Whether adopting a rescue or getting a new puppy, it's a big change for
-          everyone! Here are a few helpful tips:
+         <p className="resources__text">
+          Whether adopting a rescue or getting a new puppy, it's a big change
+          for everyone! Here are a few helpful tips:
           <br />
           <br />
           <a
@@ -44,7 +43,9 @@ export default function About() {
           >
             Full List of AKC Breeds
           </a>
-        </p>
+          <br />
+          <br />
+         </p>
       </div>
     </div>
   )
