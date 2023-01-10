@@ -40,3 +40,9 @@ const Card = ({ breed, img }) => {
 }
 
 export default Card
+
+
+Card.propTypes = {
+  breed: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired
+}

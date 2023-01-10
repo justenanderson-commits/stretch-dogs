@@ -40,6 +40,6 @@ const Result = ({ quizResults }) => {
 export default Result
 
 
-Results.propTypes = {
-  quizResults: PropTypes.object.isRequired
+Result.propTypes = {
+  quizResults: PropTypes.array.isRequired
 }
