@@ -1,0 +1,44 @@
+.resources {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f8f0e5;
+}
+
+.resources__container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  bottom: 5vh;
+}
+
+.resources h1 {
+  font-family: AbrilFatFace;
+  letter-spacing: 2px;
+  font-size: 4.5rem;
+  color: #3A716F;
+  width: 20%;
+}
+.resources p {
+  margin: 0;
+  font-family: Poppins-Medium;
+  font-size: 1.5rem;
+  color: #0a4c4b;
+}
+
+.resources img {
+  width: 70vh;
+  height: 70vh;
+  margin-right: 2%;
+}
+
+.resources__text {
+  width: 20%;
+}
