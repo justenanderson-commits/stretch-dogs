@@ -3,6 +3,7 @@ import './Header.css'
 import { Link } from 'react-router-dom'
 import { APP_ROUTES } from '../../utilis/constants'
 import paw from '../../assets/images/paw-print-heart.gif'
+import App from '../App/App'
 
 const Header = () => {
   return (
@@ -16,7 +17,7 @@ const Header = () => {
       <nav className='link-container'>
         <Link to={APP_ROUTES.ABOUT}>About</Link>
         <Link to='/'>Breeds</Link>
-        <Link to='/'>Resources</Link>
+        <Link to={APP_ROUTES.RESOURCES}>Resources</Link>
       </nav>
     </div>
   )
