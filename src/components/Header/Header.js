@@ -15,8 +15,8 @@ const Header = () => {
       </Link>
       <nav className='link-container'>
         <Link to={APP_ROUTES.ABOUT}>About</Link>
-        <Link to='/'>Breeds</Link>
-        <Link to='/'>Resources</Link>
+        <a href="https://www.akc.org/dog-breeds/" target="_blank">Breeds</a>
+        <Link to={APP_ROUTES.RESOURCES}>Resources</Link>
       </nav>
     </div>
   )

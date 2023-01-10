@@ -13,6 +13,7 @@
   font-size: 3rem;
   color: #3A716F;
   width: 40%;
+  z-index: 9999;
 }
 
 .results-card-container {
