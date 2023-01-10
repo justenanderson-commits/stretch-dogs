@@ -1,4 +1,4 @@
-.about {
+.resources {
   width: 100vw;
   height: 100vh;
   margin: 0;
@@ -11,7 +11,7 @@
   background-color: #f8f0e5;
 }
 
-.about__container {
+.resources__container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -19,41 +19,42 @@
   bottom: 5vh;
 }
 
-.about h1 {
+.resources h1 {
   font-family: AbrilFatFace;
   letter-spacing: 2px;
   font-size: 4.5rem;
   color: #3A716F;
   width: 20%;
 }
-.about p {
+.resources p {
   margin: 0;
   font-family: Poppins-Medium;
   font-size: 1.5rem;
   color: #0a4c4b;
 }
 
-.about img {
-  width: 70vh;
-  height: 70vh;
+.resources img {
+  width: 50vh;
+  height: 50vh;
   margin-right: 2%;
 }
 
-.about__text {
+.resources__text, a {
   width: 20%;
 }
 
-.about a {
+.resources a {
   margin: 0;
   font-family: Poppins-Medium;
   font-size: 1.6rem;
   color: #001275;
+  white-space: nowrap;
 }
 
-.about a:hover {
+.resources a:hover {
   margin: 0;
   font-family: Poppins-Medium;
   font-size: 1.7rem;
-  transition: 0.3s;
   color: #820495;
+  
 }

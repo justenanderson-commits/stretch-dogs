@@ -1,6 +1,7 @@
 import React from 'react'
 import MicroModal from 'react-micro-modal'
 import './Card.css'
+import PropTypes from 'prop-types'
 
 const Card = ({ breed, img, description }) => {
   console.log(description)
@@ -33,3 +34,9 @@ const Card = ({ breed, img, description }) => {
 }
 
 export default Card
+
+
+Card.propTypes = {
+  breed: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired
+}
